@@ -1,0 +1,176 @@
+.contact__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black-color);
+  width: 100%;
+  min-height: 100vh; 
+}
+
+.contact__title {
+  margin-top: 150px;
+  margin-left: 160px;
+  
+  h1 {
+    color: var(--gold-color);
+    font-weight: 800;
+    font-family: var(--font-text);
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: -0.04rem;
+  }
+
+  p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--gold-color);
+  }
+}
+
+.form__main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.form__content {
+  display: flex;
+  position: absolute;
+  right: 0;
+  right: 20%;
+  bottom: 60%;
+  width: 400px;
+  height: 260px;
+  
+  color: var(--gold-color);
+  background-image: linear-gradient((25deg, rgb(15, 13, 7) 0%, rgb(59, 52, 24) 35%, rgb(14, 11, 5) 100%));
+  border-radius: 20px;
+  box-shadow: 0 2px 3px var(--gold-color);
+  
+}
+
+.form__image {
+  position: absolute;
+  top: -55px;
+  right: -5%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow: 1px 0 3px var(--gold-color);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+}
+
+.form__title {
+  position: absolute;
+  font-size: 32px;
+  font-family: var(--font-name);
+  margin-left: 20px;
+  margin-top: 70px;
+  
+  h3 {
+    font-weight: 400;
+  }
+}
+
+.form__contact-data {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 35px;
+  font-size: 24px;
+  font-family: var(--font-text);
+  margin-left: 15px;
+  margin-top: 140px;
+ 
+}
+
+.form__contact-adress,
+.form__contact-mail,
+.form__contact-phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  h5 {
+    font-weight: 300;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact__container {
+    display: flex;
+    width: 100%;
+  }
+
+  .contact__title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-top: 110px;
+    
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .form__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .form__content {
+    width: 75%;
+    height: 30%;
+    margin-right: -40px;
+  }
+
+  .form__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .form__title {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .form__contact-data  {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 90px;
+  }
+}
+

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+
+:root {
+  --font-text: 'Newsreader', serif;
+  --font-name: 'Pinyon Script', cursive;
+
+
+  --black-color: #080C12;
+  --gold-color: #977810;
+  --linearGold-color: linear-gradient((25deg, rgb(15, 13, 7) 0%, rgb(54, 47, 22) 35%, rgb(14, 11, 5) 100%));
+  --grey-color: #646161;
+  --white-color: rgb(204, 194, 194);
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}

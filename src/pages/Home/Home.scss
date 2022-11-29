@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 160px;
+  background-color: var(--black-color);
+}
+
+.header__content {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  
+  h2 {
+    font-family: var(--font-text);
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 45px;
+    letter-spacing: -0.04rem;
+    color: var(--gold-color);
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--gold-color);
+    
+  }
+}
+
+.header__content-input {
+  margin-top: 10px;
+    
+  svg {
+    width: 35px;
+    height: 100%;
+    color: var(--gold-color);
+    margin-right: 25px;
+
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      color: var(--white-color);
+    }
+    
+  }
+}
+
+.header__content-people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+
+  p {
+    margin-top: 50px;
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: var(--gold-color);
+    text-align: center;
+  }
+}
+
+.header__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  img {
+    margin-top: 170px;
+    height: 250px;
+    border-radius: 45px;
+    box-shadow: 0 2px 0px 1px  var(--gold-color);
+   
+    opacity: 0.6;
+
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    flex-direction: column;
+  }
+  .header__content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   .header__image img {
+    height: 180px;
+    margin: 100px;
+  }
+  .header__content h2 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__image img {
+    height: 140px;    
+  }
+
+  .header__content h2 {
+    font-size: 24px;
+    line-height: 22px;
+    margin-top: 25px;
+    width: 300px;
+  }
+
+
+  .header__content-people {
+    width: 200px;
+  }
+}

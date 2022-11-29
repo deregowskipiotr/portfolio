@@ -1,0 +1,248 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--black-color);
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 20px 160px;
+}
+
+.projects__title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  
+  h1 {
+    color: var(--gold-color);
+    font-weight: 800;
+    font-family: var(--font-text);
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: -0.04rem;
+  }
+
+  p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--gold-color);
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--gold-color);
+  font-family: var(--font-text);
+  font-weight: 600;
+}
+
+.card__blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin: 20px;
+  width: 350px;
+  height: 200px;
+  background-image: var(--black-color);
+  border-radius: 20px;
+  box-shadow: 0 1px 3px var(--gold-color);
+  transition: all 0.5s ease-in-out;
+  
+
+  &:hover {
+    height: 450px;
+    box-shadow: 3px 6px 12px var(--gold-color);
+  }
+  
+}
+
+.card__blog-image {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow: 1px 0 3px var(--gold-color);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+
+  &:hover {
+    width: 150px;
+    height: 150px;
+    box-shadow: 3px 6px 12px var(--gold-color);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+}
+
+.card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  height: 85%;
+  margin-top: 50px;
+  padding: 5px 10px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+
+  .card__title {
+    font-size: 26px;
+    margin-top: 55px;
+  }
+
+  .card__info {
+    width: 95%;
+    height: 35%;
+    font-size: 18px;
+    margin-top: 70px;
+    
+  }
+
+  .tag__list {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 16px;
+    
+  }
+
+  .utility__list {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 20px;
+    list-style-type: none;
+       
+    .externalLinks {
+      display: flex;
+      color: var(--black-color);
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 15px;
+      border: none;
+      transition: all .5s ease-in-out;
+      background-image: linear-gradient(to bottom right, var(--gold-color) 40%, var(--black-color)80%);
+      box-shadow: 2px 3px 12px var(--gold-color);
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: var(--black-color);
+        
+        &:hover {
+          color: var(--white-color);
+          font-weight: 200;
+        }
+      }
+      
+      &:hover {
+        background-image: linear-gradient(to bottom right, var(--black-color) 40%, var(--gold-color)80%);;
+        color: var(--grey-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .projects__title {
+    display: flex;
+    margin-left: -120px;
+    margin-top: 90px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  .card__blog-image {
+    top: -40px;
+
+    
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .projects__title {
+    display: flex;
+    width: 200px;
+    padding: 10px auto;
+    margin-left: -140px;
+    margin-top: 90px;
+    
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+ 
+  .card__blog {
+    display: flex;
+    flex-direction: column;
+
+    .card__blog-image {
+      
+      width: 80px;
+      height: 80px;
+      top: -20px;
+
+      &:hover {
+        width: 100px;
+        height: 100px;
+     }
+    }
+
+    .card__title {
+      font-size: 16px;
+      margin-top: 55px;
+    }
+
+    .card__info {
+      margin-top: 75px;
+      font-size: 14px;
+    }
+
+    .tag__list {
+      display: none;
+    }
+
+    .utility__list {
+      display: flex;      
+      margin-right: 30px;
+      margin-top: 40px;
+      justify-content: space-between;
+
+      .externalLinks {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
