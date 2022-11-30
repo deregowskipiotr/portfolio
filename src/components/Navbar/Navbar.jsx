@@ -6,7 +6,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const Menu = () => (
   <>
-      <Link to="/">Dom</Link>
+      <Link to="/">Strona Główna</Link>
       <Link to="/projects">Projekty</Link>
       <Link to="/experience">Doświadczenie</Link>
       <Link to="/contact">Kontakt</Link>

@@ -23,8 +23,8 @@ function Experience() {
         <div className="experience__title">
           <h1>Doświadczenie</h1>
           <p>
-            Kilka słów odnośnie mojego dotychczasowego doświadczenia, <br />{" "}
-            oraz ukończonych kursów.
+            Kilka słów odnośnie mojego dotychczasowego doświadczenia, <br />
+            oraz ukończonych kursów. <br />
           </p>
         </div>
 

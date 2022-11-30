@@ -93,32 +93,6 @@
   }
 }
 
-.swiper-slide:nth-child(5) {
-  img {
-    width: 260px;
-    height: 360px;
-    object-fit: cover;
-    transition: all 1.5s ease-in-out;
-  }
-
-  img:hover {
-    transform: scale(1.2);
-  }
-}
-
-.swiper-slide:nth-child(6) {
-  img {
-    width: 260px;
-    height: 360px;
-    object-fit: cover;
-    transition: all 1.5s ease-in-out;
-  }
-
-  img:hover {
-    transform: scale(1.2);
-  }
-}
-
 .swiper-pagination-bullet {
   background-color: var(--white-color);
 }

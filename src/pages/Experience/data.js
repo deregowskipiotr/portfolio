@@ -1,8 +1,7 @@
-import Image1 from "../../assets/image1.jpg";
-import Image2 from "../../assets/image2.jpg";
 import Image3 from "../../assets/eurocash-logo.jpg";
 import Image5 from '../../assets/cedc-logo.png';
 import Image6 from '../../assets/logo-kodilla.png';
+
 
 export const data = [
   {
@@ -31,16 +30,6 @@ export const data = [
     title: "PH ds. Gastronomii",
     description: "Obsługa klientów HoReCa . Sprzedaż , wprowadzanie nowych produktów , odpowiedzialność za dostawy oraz terminowe rozliczenia płatności.",
     id: 3,
-    
-  },
-  {
-    image: Image2,
-    id: 4,
-    
-  },
-  {
-    image: Image1,
-    id: 5,
     
   },
 ];

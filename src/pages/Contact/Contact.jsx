@@ -9,7 +9,7 @@ function Contact() {
     <div className="contact__container">
       <div className="contact__title">
         <h1>Kontakt</h1>
-        
+        <p>W razie dodatkowych zapytań, zapraszam do kontaktu.</p>
       </div>
 
       <div className="form__main">
