@@ -18,6 +18,25 @@ body {
   
 }
 
+.bg-circle1 {
+  position: fixed;
+  bottom: 150px;
+  right: 120px;
+  height: 250px;
+  width: 300px;
+  background: rgb(165, 162, 162);
+  filter: blur(220px);
+}
+
+.bg-circle2 {
+  position: fixed;
+  top: 150px;
+  left: 250px;
+  height: 200px;
+  width: 300px;
+  background: rgb(255, 252, 253);
+  filter: blur(220px);
+}
 
 .scale-up-center {
   -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -48,22 +67,3 @@ body {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .section__padding {
-    padding: 4rem;
-  }
-
-  .section__margin {
-    margin: 4rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-
-  .section__margin {
-    margin: 4rem 2rem;
-  }
-}

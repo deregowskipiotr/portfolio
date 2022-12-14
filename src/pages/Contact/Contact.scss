@@ -9,12 +9,12 @@
 }
 
 .contact__title {
-  margin-top: 150px;
+  margin-top: 160px;
   margin-left: 160px;
   
   h1 {
     color: var(--gold-color);
-    font-weight: 800;
+    font-weight: 200;
     font-family: var(--font-text);
     font-size: 40px;
     line-height: 70px;
@@ -23,7 +23,6 @@
 
   p {
     font-family: var(--font-text);
-    font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     color: var(--gold-color);
@@ -49,20 +48,21 @@
   height: 260px;
   
   color: var(--gold-color);
-  background-image: linear-gradient((25deg, rgb(15, 13, 7) 0%, rgb(59, 52, 24) 35%, rgb(14, 11, 5) 100%));
+  background: hsl(0, 0%, 34%);
   border-radius: 2px;
   box-shadow: 0 2px 3px var(--gold-color);
   
 }
 
+
 .form__image {
   position: absolute;
-  top: -40px;
+  top: -30px;
   right: -10%;
   transform: translateX(-50%);
   width: 120px;
   height: 120px;
-  border-radius: 20px;
+  border-radius: 2px;
   box-shadow: 1px 0 3px var(--gold-color);
   transition: all 0.5s ease-in-out;
   overflow: hidden;
@@ -132,13 +132,18 @@
     margin-top: 110px;
     
     h1 {
-      font-size: 30px;
+      font-size: 28px;
     }
+
+    p {
+        font-size: 22px;
+      }
   }
 
   .form__main {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
   }
 
   .form__content {
@@ -150,7 +155,7 @@
   .form__content {
     width: 75%;
     height: 30%;
-    margin-right: -40px;
+    margin-right: -45px;
   }
 
   .form__main {

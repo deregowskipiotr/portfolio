@@ -39,6 +39,8 @@ function Info() {
     setMessage("");
   };
 
+ 
+
   return (
     <div className="contact-info">
       
@@ -49,7 +51,7 @@ function Info() {
           value={senderName}
           onChange={handleName}
           required
-          placeholder="twoje imię"
+          placeholder="imię"
         />
         <input
           type="email"
@@ -57,7 +59,7 @@ function Info() {
           value={senderEmail}
           onChange={handleEmail}
           required
-          placeholder="twój adres email"
+          placeholder="e-mail"
         />
         <textarea
           className="form-text"

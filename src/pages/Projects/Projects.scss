@@ -18,7 +18,7 @@
   
   h1 {
     color: var(--gold-color);
-    font-weight: 800;
+    font-weight: 200;
     font-family: var(--font-text);
     font-size: 40px;
     line-height: 70px;
@@ -27,7 +27,6 @@
 
   p {
     font-family: var(--font-text);
-    font-weight: 400;
     font-size: 24px;
     line-height: 32px;
     color: var(--gold-color);
@@ -36,13 +35,14 @@
 
 .card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
   min-height: 100vh;
   color: var(--gold-color);
   font-family: var(--font-text);
-  font-weight: 600;
+  font-weight: 200;
 }
 
 .card__blog {
@@ -54,15 +54,15 @@
   margin: 20px;
   width: 350px;
   height: 200px;
-  background-image: var(--black-color);
-  border-radius: 20px;
-  box-shadow: 0 1px 3px var(--gold-color);
+  background :hsl(0, 0%, 34%);
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px var(--gold-color);
   transition: all 0.5s ease-in-out;
   
 
   &:hover {
     height: 450px;
-    box-shadow: 3px 6px 12px var(--gold-color);
+    background :hsl(0, 0%, 40%);
   }
   
 }
@@ -74,7 +74,7 @@
   transform: translateX(-50%);
   width: 120px;
   height: 120px;
-  border-radius: 20px;
+  border-radius: 8px;
   box-shadow: 1px 0 3px var(--gold-color);
   transition: all 0.5s ease-in-out;
   overflow: hidden;
@@ -118,7 +118,7 @@
     width: 95%;
     height: 35%;
     font-size: 18px;
-    margin-top: 70px;
+    margin-top: 60px;
     
   }
 
@@ -126,8 +126,8 @@
     display: flex;
     justify-content: space-around;
     width: 90%;
-    font-size: 16px;
-    
+    font-size: 14px;
+    margin-top: 20px;
   }
 
   .utility__list {
@@ -142,11 +142,11 @@
       color: var(--black-color);
       font-size: 18px;
       padding: 10px 15px;
-      border-radius: 15px;
+      border-radius: 2px;
       border: none;
       transition: all .5s ease-in-out;
       background-image: linear-gradient(to bottom right, var(--gold-color) 40%, var(--black-color)80%);
-      box-shadow: 2px 3px 12px var(--gold-color);
+      box-shadow: 2px 3px 7px var(--gold-color);
       cursor: pointer;
 
       a {
@@ -169,6 +169,9 @@
 
 @media screen and (max-width: 768px) {
 
+  .projects {
+    height: auto;
+  }
   .projects__title {
     display: flex;
     margin-left: -120px;
@@ -180,8 +183,6 @@
 
   .card__blog-image {
     top: -40px;
-
-    
   }
 }
 
@@ -225,6 +226,7 @@
     }
 
     .card__info {
+      text-align: center;
       margin-top: 75px;
       font-size: 14px;
     }

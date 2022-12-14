@@ -14,8 +14,8 @@
   
   h2 {
     font-family: var(--font-text);
-    font-weight: 800;
     font-size: 42px;
+    font-weight: 400;
     line-height: 45px;
     letter-spacing: -0.04rem;
     color: var(--gold-color);
@@ -24,7 +24,7 @@
 
   p {
     font-family: var(--font-text);
-    font-weight: 400;
+    font-weight: 100;
     font-size: 22px;
     line-height: 32px;
     color: var(--gold-color);
@@ -73,15 +73,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 80px;
   
   img {
     margin-top: 170px;
-    height: 250px;
-    border-radius: 45px;
-    box-shadow: 0 2px 0px 1px  var(--gold-color);
-   
+    height: 320px;
     opacity: 0.6;
-
+    box-shadow: 1px 2px 5px var(--gold-color);
   }
 }
 
@@ -113,17 +111,23 @@
     align-items: center;
   }
 
+  .header__image {
+    margin-left: 80px;
+  }
   .header__image img {
-    height: 140px;    
+    height: 160px;    
   }
 
   .header__content h2 {
     font-size: 24px;
-    line-height: 22px;
-    margin-top: 25px;
+    line-height: 26px;
     width: 300px;
   }
 
+  .header__content p {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
   .header__content-people {
     width: 200px;

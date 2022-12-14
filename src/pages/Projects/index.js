@@ -9,7 +9,7 @@ export const projects = [
       "Aplikacja, która docelowo ma być e-sklepem. Na tym etapie będzie służyć do zaprezentowania własnoręcznie robionych 'prezentów'. W dalszej kolejności będę chaciał rozbudować komponent z kartami, dołączyć koszyk zakupowy etc...",
     image: Image1,
     tags: ["CSS", "REACT"],
-    source: "https://przed-sklep.netlify.app",
+    source: "https://przed-e-sklep.netlify.app",
     visit: "https://github.com/deregowskipiotr/blog-portfolio",
     id: 0,
   },

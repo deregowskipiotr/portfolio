@@ -11,7 +11,7 @@ function Projects () {
     <div className="projects">
       <div className="projects__title">
         <h1>Projekty</h1>
-        <p>Zapraszam do obejrzenia moich projektów,</p>
+        <p>Zapraszam do obejrzenia moich projektów.</p>
       </div>
 
       <div className="card">

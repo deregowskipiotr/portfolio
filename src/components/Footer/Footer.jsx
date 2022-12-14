@@ -6,7 +6,7 @@ function Footer() {
       <div>
         <AiOutlineTwitter />
       </div>
-      <p>&create; 2022 piotr.deregowski</p>
+      <p>&copy; 2022 piotr.deregowski</p>
     </div>
   );
 }

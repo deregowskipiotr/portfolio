@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="header ">
       <div className="header__image">
-        <img src={profile} alt="ai" />
+        <img src={profile} alt="" />
       </div>
       <div className="header__content">
         <h2>
